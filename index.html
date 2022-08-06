@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset=“UTF-8” />
+        <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
+        <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
+
+        <meta property=“og:title” content= “Chad - 프로필 링크” />
+        <meta property=“og:description” content=“Welcome to my World” />
+        <meta property=“og:image” content=“공유할 이미지” />
+
+        <title>Profile Link</title>
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body{
+                background-image: url('img/background.jpg');
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+            }
+            .profile{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                border: 2px solid #fff;
+                background-image: url('img/profile.png');
+                background-position: center;
+                background-size: cover;
+            }
+            .main{
+                color: rgb(202, 202, 202);
+                font-size: 20px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub{
+                color: rgb(202, 202, 202);
+                font-size: 14px;
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .wrap{
+                width: 300px;
+                margin: 100px auto 0px auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap>a{
+                width: 300px;
+                height: 50px;
+                background: #fff;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #410175;
+                text-decoration: none;
+
+                box-shadow: 3px 3px 5px 0px black;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap>a:hover{
+                background: #f2f2f2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="profile"></div>
+            <h1 class="main">Chad</h1>
+            <p class="sub">Hello World</p>
+            <a target="_blank" href="https://spartacodingclub.kr/">Portfolio</a>
+            <a target="_blank" href="https://notefolio.net/">Notefolio</a>
+            <a target="_blank" href="https://www.behance.net/">Behance</a>
+            <a target="_blank" href="https://www.pinterest.co.kr/">Pinterest</a>
+        </div>
+        
+    </body>
+</html>
